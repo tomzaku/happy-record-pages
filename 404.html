@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Dreamer</title>
+  <meta name="description" content="Make your dreams come true" />
+  <link rel="icon" href="/assets/dreamer-DzqmVHhp.ico" />
+  <link rel="apple-touch-icon" href="/assets/dreamer-BzXW0STx.png" sizes="180x180" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="mask-icon" href="/assets/dreamer-DzqmVHhp.ico" color="#0b7dc2">
+  <meta name="theme-color" content="#0b7dc2">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    #app-initial-loader {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      z-index: 9999;
+    }
+
+    #app-initial-loader svg {
+      width: 40px;
+      height: 40px;
+      animation: app-initial-loader-spin 0.8s linear infinite;
+    }
+
+    @keyframes app-initial-loader-spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+  <script>
+    // Single Page Apps for GitHub Pages / Static Hosting
+    // MIT License - https://github.com/rafgraph/spa-github-pages
+    // This script checks to see if a redirect is present in the query string,
+    // converts it back into the correct url and adds it to the
+    // browser's history using window.history.replaceState(...),
+    // which won't cause the browser to attempt to load the new url.
+    // When the single page app is loaded further down in this file,
+    // the correct url will be waiting in the browser's history for
+    // the single page app to route accordingly.
+    (function(l) {
+      if (l.search[1] === '/' ) {
+        var decoded = l.search.slice(1).split('&').map(function(s) { 
+          return s.replace(/~and~/g, '&')
+        }).join('?');
+        window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+        );
+      }
+    }(window.location))
+  </script>
+  <script type="module" crossorigin src="/assets/index-DjZSs7fD.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-Bba_Pb2k.css">
+<link rel="manifest" href="/manifest.webmanifest"></head>
+
+<body>
+  <div id="app">
+    <div id="app-initial-loader">
+      <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="25" cy="25" r="20" fill="none" stroke="#e5eef5" stroke-width="5" />
+        <circle cx="25" cy="25" r="20" fill="none" stroke="#0b7dc2" stroke-width="5" stroke-linecap="round"
+          stroke-dasharray="90 125" />
+      </svg>
+    </div>
+  </div>
+</body>
+
+</html>
+
